@@ -9,7 +9,8 @@ O código usa recursos modernos do C++ como:
   -Recursos de geração de números aleatórios
   -Proteções de cabeçalho (#ifndef, #define, #endif)
   -Programação orientada a objetos com classes
-  -Fluxos de entrada/saída padrão
+  -Fluxos de entrada/saída padrã
+  -Header files
 
 CartaoBingo (Cartela de Bingo):
 
