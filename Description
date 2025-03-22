@@ -1,0 +1,41 @@
+PT-PT
+
+Realizar o jogo "Bingo" 
+
+
+O código usa recursos modernos do C++ como:
+
+  -Contêineres STL (vetor)
+  -Recursos de geração de números aleatórios
+  -Proteções de cabeçalho (#ifndef, #define, #endif)
+  -Programação orientada a objetos com classes
+  -Fluxos de entrada/saída padrão
+
+CartaoBingo (Cartela de Bingo):
+
+Membros privados:
+vector<vector<int>> cartao: vetor que armazena números de cartelas
+vector<vector<bool>> marcados: vetor que rastreia números marcados
+const string letras: Armazena letras de "BINGO"
+Métodos públicos:
+CartaoBingo(): Construtor que inicializa a cartela de bingo
+imprimirCartao(): Imprime a cartela
+marcarNumero(int num): Marca um número na cartela
+JogoBingo (Jogo de Bingo):
+
+Membros privados:
+vector<int> numeros: Armazena números a serem sorteados
+CartaoBingo cartao: Instância de uma cartela de bingo
+Métodos públicos:
+JogoBingo(): Construtor que inicializa o jogo
+sortearNumero(): Tira um número
+jogar(): Executa o jogo
+Componentes da biblioteca padrão usados:
+
+vector: Para armazenar números e criar o card grid
+random_device e mt19937: Para geração de números aleatórios
+iostream: Para operações de entrada/saída
+algoritmo: Para operação de embaralhamento
+
+  
+  
