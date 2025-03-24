@@ -6,7 +6,7 @@
 
 class JogoBingo {
 private:
-    std::vector<int> numeros;
+    vector<int> numeros;
     CartaoBingo cartao;
 
 public:
