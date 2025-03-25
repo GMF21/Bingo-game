@@ -4,7 +4,7 @@
 
 CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>(5, false)) { 
     static random_device rd; //variável seja criada uma única vez e persista ao longo da execução do programa
-    static mt19937 gen(rd());//gerador de numeros aleatórios
+    static mt19937 gen(rd());//gerador de numeros aleatórios (Mersenne Twister 19937, gerador de números pseudoaleatórios)
     for (int col = 0; col < 5; col++) {
         vector<int> numeros; // Matriz de números
         for (int i = 1; i <= 15; i++) {
