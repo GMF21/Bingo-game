@@ -6,11 +6,11 @@
 
 JogoBingo::JogoBingo() {
     for (int i = 1; i <= 75; i++) {
-        numeros.push_back(i);
+        numeros.push_back(i); // preenche com os numeros de a 1 a 75
     }
     static random_device rd;
     static mt19937 gen(rd());
-    shuffle(numeros.begin(), numeros.end(), gen);
+    shuffle(numeros.begin(), numeros.end(), gen); //embaralha a lista
 }
 
 void JogoBingo::sortearNumero() {
