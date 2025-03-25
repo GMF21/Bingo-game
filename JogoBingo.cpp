@@ -18,15 +18,15 @@ void JogoBingo::sortearNumero() {
         cout << "Todos os números foram sorteados!" << endl;
         return; //evita que o programa tente acessar ao .back e ao .pop... evitando erros
     }
-    int num = numeros.back();
-    numeros.pop_back(); // elimina o ultimo elemento
+    int num = numeros.back(); //pega o ultimo elemeno
+    numeros.pop_back(); // elimina este ultimo elemento garantindo que nao e gerado denovo
     cout << "Número gerado: " << num << endl;
     cartao.marcarNumero(num);
     cartao.imprimirCartao();
 }
 
 void JogoBingo::jogar() {
-    while (!numeros.empty()) {
+    while (!numeros.empty()) { //ojogo fica enquanto tiver numeros para encontrar
         cout << "Pressione ENTER para gerar o número";
         cin.ignore();
         sortearNumero();
