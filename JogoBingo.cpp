@@ -2,7 +2,7 @@
 #include <iostream>
 #include <algorithm>
 //#include <ctime>
-#include <cstdlib>
+//#include <cstdlib>
 
 JogoBingo::JogoBingo() {
     for (int i = 1; i <= 75; i++) {
