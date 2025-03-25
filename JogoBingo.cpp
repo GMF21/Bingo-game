@@ -1,7 +1,7 @@
 #include "JogoBingo.h"
 #include <iostream>
 #include <algorithm>
-#include <ctime>
+//#include <ctime>
 #include <cstdlib>
 
 JogoBingo::JogoBingo() {
