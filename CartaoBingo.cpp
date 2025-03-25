@@ -6,7 +6,7 @@ CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>
     static random_device rd;
     static mt19937 gen(rd());
     for (int col = 0; col < 5; col++) {
-        vector<int> numeros;
+        vector<int> numeros; // Matriz de números
         for (int i = 1; i <= 15; i++) {
             numeros.push_back(col * 15 + i);
         }
