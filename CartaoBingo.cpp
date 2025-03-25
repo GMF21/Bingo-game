@@ -2,7 +2,7 @@
 #include <ctime>
 #include <algorithm>
 
-CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>(5, false)) {
+CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>(5, false)) { 
     static random_device rd;
     static mt19937 gen(rd());
     for (int col = 0; col < 5; col++) {
