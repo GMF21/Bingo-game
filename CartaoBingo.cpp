@@ -8,12 +8,12 @@ CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>
     for (int col = 0; col < 5; col++) {
         vector<int> numeros; // Matriz de números
         for (int i = 1; i <= 15; i++) {
-            numeros.push_back(col * 15 + i);
+            numeros.push_back(col * 15 + i); //GERA OS NUMEROS DE 1 A 75 por colunas
         }
-        shuffle(numeros.begin(), numeros.end(), gen);
+        shuffle(numeros.begin(), numeros.end(), gen); //shuffle utilizado para embaralhar os numeros
         for (int row = 0; row < 5; row++) {
-            cartao[row][col] = numeros[row];
-            marcados[row][col] = false;
+            cartao[row][col] = numeros[row]; // preenche o cartao 
+            marcados[row][col] = false; // para saber que inicialmente nenhum ta marcado  
         }
     }
 }
@@ -22,12 +22,10 @@ void CartaoBingo::imprimirCartao() {
     cout << "B  I  N  G  O" << endl;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            if (cartao[i][j] == 0)
-                cout << " X ";
-            else if (marcados[i][j])
-                cout << "X ";
+            if (marcados[i][j])
+                cout << "X "; 
             else
-                cout << cartao[i][j] << " ";
+                cout << cartao[i][j];
         }
         cout << endl;
     }
@@ -36,9 +34,9 @@ void CartaoBingo::imprimirCartao() {
 
 void CartaoBingo::marcarNumero(int num) {
     for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
+        for (int j = 0; j < 5; j++) { 
             if (cartao[i][j] == num) {
-                marcados[i][j] = true;
+                marcados[i][j] = true; // se for encontrado passa a variavel para true
             }
         }
     }
