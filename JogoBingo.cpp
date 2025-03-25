@@ -6,7 +6,7 @@
 
 JogoBingo::JogoBingo() {
     for (int i = 1; i <= 75; i++) {
-        numeros.push_back(i); // preenche com os numeros de a 1 a 75
+        numeros.push_back(i); // preenche a lista com os numeros de a 1 a 75 e depois remove-os da lista
     }
     static random_device rd;
     static mt19937 gen(rd());
@@ -16,7 +16,7 @@ JogoBingo::JogoBingo() {
 void JogoBingo::sortearNumero() {
     if (numeros.empty()) { 
         cout << "Todos os números foram sorteados!" << endl;
-        return;
+        return; //evita que o programa tente acessar ao .back e ao .pop... evitando erros
     }
     int num = numeros.back();
     numeros.pop_back(); // elimina o ultimo elemento
