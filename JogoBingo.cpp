@@ -10,16 +10,16 @@ JogoBingo::JogoBingo() {
     }
     static random_device rd;
     static mt19937 gen(rd());
-    shuffle(numeros.begin(), numeros.end(), gen); //embaralha a lista
+    shuffle(numeros.begin(), numeros.end(), gen); //embaralha a lista (begin (interador poh primeiro elemento do vetor) end(interador que sponta poh ultimo elemento e adiciona)
 }
 
 void JogoBingo::sortearNumero() {
-    if (numeros.empty()) {
+    if (numeros.empty()) { 
         cout << "Todos os números foram sorteados!" << endl;
         return;
     }
     int num = numeros.back();
-    numeros.pop_back();
+    numeros.pop_back(); // elimina o ultimo elemento
     cout << "Número gerado: " << num << endl;
     cartao.marcarNumero(num);
     cartao.imprimirCartao();
