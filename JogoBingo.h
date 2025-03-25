@@ -6,8 +6,8 @@
 
 class JogoBingo {
 private:
-    vector<int> numeros;
-    CartaoBingo cartao;
+    vector<int> numeros; //numeros 
+    CartaoBingo cartao; //cartao
 
 public:
     JogoBingo();
