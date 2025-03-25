@@ -10,7 +10,7 @@ private:
     CartaoBingo cartao; //cartao
 
 public:
-    JogoBingo();
+    JogoBingo(); //construtor
     void sortearNumero();
     void jogar();
 };
