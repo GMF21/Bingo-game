@@ -14,7 +14,7 @@ private:
     const string letras = "BINGO";
 
 public:
-    CartaoBingo();
+    CartaoBingo(); //construtor
     void imprimirCartao();
     void marcarNumero(int num);
 };
