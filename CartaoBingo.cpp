@@ -1,6 +1,5 @@
 #include "CartaoBingo.h"
 #include <ctime>
-#include <cstdlib>
 #include <algorithm>
 
 CartaoBingo::CartaoBingo() : cartao(5, vector<int>(5)), marcados(5, vector<bool>(5, false)) {
