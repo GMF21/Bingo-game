@@ -24,7 +24,7 @@ void CartaoBingo::imprimirCartao() {
             if (marcados[i][j])
                 cout << "X "; 
             else
-                cout << cartao[i][j];
+                cout << cartao[i][j] << " ";
         }
         cout << endl;
     }
