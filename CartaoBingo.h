@@ -11,7 +11,7 @@ class CartaoBingo {
 private:
     vector<vector<int>> cartao; // Matriz de números
     vector<vector<bool>> marcados;
-    const string letras = "BINGO";
+    
 
 public:
     CartaoBingo(); //construtor
