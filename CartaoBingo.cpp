@@ -22,7 +22,7 @@ void CartaoBingo::imprimirCartao() {
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
             if (marcados[i][j])
-                cout << "X "; 
+                cout << " X "; 
             else
                 cout << cartao[i][j] << " ";
         }
